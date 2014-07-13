@@ -55,10 +55,10 @@ else if (argv.u) {
     valueEncoding: 'json'
   }
 
-  require('levelup')(location, opts, function(err, db) {
+  require('level')(location, opts, function(err, db) {
 
     if (argv.p) {
-      require('bcrypt').hash(argv.p, 5, function(err, bcryptedPassword) {
+      require('bcryptjs').hash(argv.p, 5, function(err, bcryptedPassword) {
          db.put('__user__' + argv.u, bcryptedPassword, function(err) {
 
           if (err) {

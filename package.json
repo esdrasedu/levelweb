@@ -10,20 +10,20 @@
     "levelweb": "./bin/levelweb"
   },
   "dependencies": {
-    "ws": "~0.4.25",
-    "levelup": "0.8.0",
+    "ws": "~0.4.31",
+    "level": "~0.18.0",
     "event-stream": "~3.0.12",
     "mime": "~1.2.9",
     "moment": "~2.0.0",
     "keygrip": "~0.2.2",
     "cookies": "~0.3.6",
-    "bcrypt": "~0.7.5",
+    "bcryptjs": "1.1.0",
     "node-uuid": "~1.4.0",
     "optimist": "~0.3.5",
-    "multilevel": "~3.0.0",
+    "multilevel": "~6.0.0",
     "browserify": "~2.13.2"
   },
-  "repository": "git@github.com:hij1nx/levelweb.git",
-  "author": "hij1nx",
+  "repository": "git@github.com:esdrasedu/levelweb.git",
+  "author": "esdrasedu",
   "license": "MIT"
 }
